@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+        }
+    
+        #header {
+            background-color: #05164d;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center; 
+          }
+      
+          #main-nav {
+            background-color: #ffffff;
+            color: #3f3f3f;
+            padding: 15px;
+            height: 100vh;
+            width: 200px;
+            position: fixed;
+            top: 100px; /* Moved down below header */
+            left: 0;
+            box-shadow: 0px 0px 10px #ddd;
+          }
+    
+        #main-nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+    
+        #main-nav li a {
+          color: #3f3f3f;
+          text-decoration: none;
+          display: block;
+          padding: 10px;
+          transition: background-color 0.2s;
+        }
+    
+        #main-nav li a:hover {
+          background-color: #ffad00;
+        }
+    
+        #sub-nav {
+          background-color: #ffffff;
+          border-bottom: 1px solid #ddd; 
+          padding: 15px;
+          text-align: center;
+        }
+    
+        #sub-nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+    
+        #sub-nav li {
+          margin: 0 10px;
+        }
+    
+        #sub-nav a {
+          color: #3f3f3f;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+    
+        #sub-nav a:hover {
+          color: #ffad00;
+        }
+    
+        #sections {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+    
+        .section {
+          background-color: #ffffff;
+          box-shadow: 0px 0px 5px #ddd;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+    
+        #sticky-notes {
+          background-color: #f2f2f2;
+          padding: 20px;
+          width: 300px;
+          position: fixed;
+          top: 100px;
+          right: 20px;
+          box-shadow: 0px 0px 10px #ddd;
+        }
+    
+      </style>
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>Technik Server</h1>
+  </div>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Contributors</a></li>  
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="sub-nav">
+    <ul>
+      <li><a href="#">Section 1</a></li>
+      <li><a href="#">Section 2</a></li>
+      <li><a href="#">Section 3</a></li>
+      <li><a href="#">Section 4</a></li>
+      <li><a href="#">Section 5</a></li>
+    </ul>
+  </div>
+
+  <div id="sections">
+    <div class="section">
+      <h2>Section 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    
+    <div class="section">  
+      <h2>Section 2</h2>
+      <p>Donec aliquet arcu nec sapien tempus vestibulum.</p>
+    </div>
+    
+    <div class="section">
+      <h2>Section 3</h2>
+      <p>Aliquam posuere massa metus, sed fringilla nibh.</p> 
+    </div>
+    
+    <div class="section">
+      <h2>Section 4</h2>
+      <p>Aenean interdum lacus et ultricies vestibulum.</p>
+    </div>
+    
+    <div class="section">
+      <h2>Section 5</h2>
+      <p>Ut id odio est. Curabitur consequat volutpat mauris.</p>
+    </div>
+  </div>
+
+  <aside id="sticky-notes">
+    <h3>Sticky Notes</h3>
+    <p>This is a sticky note.</p>
